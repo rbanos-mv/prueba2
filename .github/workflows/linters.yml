@@ -1,20 +1,14 @@
-name: Continuous Integration
+name: Run Linters
 
-# this is trigger CI on push and PR for main branch only
-# on:
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
-
-# this is trigger CI on all kinds of branches and PRs
 on:
   push:
-    branches: [ feat/* fix/* ] # Run on pull requests from feat/fix branches only
+    branches: [ "feat*/*", "fix/*" ] # Run on push requests from feat/fix branches only
   pull_request:
+    branches: [ "feat*/*", "fix/*" ] # Run on push requests from feat/fix branches only
 
 jobs:
-  build:
+  lint:
+    name: RunLinters
     runs-on: ubuntu-latest
 
     steps:

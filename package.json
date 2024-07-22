@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 0",
     "eslint": "npx eslint . --ext html,js,jsx,ts,tsx,json,jsonc --max-warnings 0",
     "eslint:fix": "npx eslint . --ext html,js,jsx,ts,tsx,json,jsonc --fix",
     "format": "prettier --check './**/*.{css,scss,html,js,jsx,ts,tsx,json,jsonc}'",

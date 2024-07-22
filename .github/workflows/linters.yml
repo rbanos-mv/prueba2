@@ -2,9 +2,9 @@ name: Run Linters
 
 on:
   push:
-    branches: [ feat*/* fix/* ] # Run on push requests from feat/fix branches only
+    branches: [ "feat*/*", "fix/*" ] # Run on push requests from feat/fix branches only
   pull_request:
-    branches: [ feat*/* fix/* ] # Run on pull requests from feat/fix branches only
+    branches: [ "feat*/*", "fix/*" ] # Run on push requests from feat/fix branches only
 
 jobs:
   lint:

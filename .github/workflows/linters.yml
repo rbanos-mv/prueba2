@@ -1,4 +1,4 @@
-name: RunLinters
+name: Run Linters
 
 on:
   push:

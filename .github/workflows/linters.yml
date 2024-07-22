@@ -5,6 +5,7 @@ on:
     branches: [ "feat*/*", "fix/*" ] # Run on push requests from feat/fix branches only
   pull_request:
     branches: [ "feat*/*", "fix/*" ] # Run on push requests from feat/fix branches only
+  merge_group:
 
 jobs:
   lint:
